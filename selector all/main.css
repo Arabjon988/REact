@@ -1,0 +1,17 @@
+body{
+    position: absolute;
+    display: block;
+    cursor: pointer;
+}
+
+.collection__item{
+    height: 30px;
+    width: 250px;
+    border: 1px solid black;
+    list-style-type: none;
+    background-color: red;
+}
+
+.border{
+        border-left: 10px solid black;
+}

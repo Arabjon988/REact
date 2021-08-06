@@ -1,0 +1,81 @@
+*, *::before,*::after{
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root{
+    --hue-neutral:200;
+    --hue-wrong: 0;
+    --hue-correct:145;
+}
+
+body{
+    --hue:var(--hue-neutral);
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    width: 100vh;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(var(--hue), 100%, 20%);
+}
+
+body.wrong{
+    --hue:var(--hue-wrong);
+}
+
+.container{
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px  2px;
+}
+
+.btn-grid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 15px;
+    margin: 20px 0px;
+}
+
+.btn{
+    background-color: hsl(var(--hue), 100%, 50%);
+    border: 1px solid hsl(var(--hue), 100%, 30%) ;
+    --hue:var(--hue-neutral);
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    padding: 5px 10px;
+}
+
+.btn:hover{
+    border-color: black ;
+}
+
+.btn.correct{
+    --hue:var(--hue-correct);
+    color: black;
+}
+
+.btn.wrong{
+    --hue:var(--hue-wrong);
+}
+
+.start-btn, .next-btn{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide{
+    display: none;
+}

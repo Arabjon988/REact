@@ -1,0 +1,36 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 200px;
+    height: 300px;
+    display: grid;
+    align-items: stretch;
+    text-align: center;
+    margin: 150px 300px 200px 300px;
+    border: 1px solid black;
+    cursor: pointer;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-radius: 5px;
+}
+
+.value{
+    grid-row: 1;
+    align-items: center;
+    margin: 5px;
+}
+
+.num{
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    background-color: chartreuse;
+    grid-column: 1/5;
+}
+
+.container span:nth-child(1){
+    background-color: black;
+}

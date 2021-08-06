@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadData()">
+    <div class="container">
+        <div class="general__location_time">
+            <h2 class="general__location"></h2>
+        </div>
+        <h2 class="local__time"></h2>
+        <div class="primary__content">
+            <h2 class="weather__location"></h2>
+        </div>
+        <div class="lat-long">
+            <div class="lat__con">
+                <h4 class="lat-long_mark">Latitude: <span class="lat"></span></h4>
+            </div>
+            <div class="long__con">
+                <h4 class="lat-long_mark">Longitude: <span class="long"></span></h4>
+            </div>
+            <div class="long__con">
+                <h4 class="lat-long_mark">Ragion: <span class="reg"></span></h4>
+            </div>
+        </div>
+        <div class="all__temprature">
+            <h1 class="main__temperature"></h1>
+            <div class="temp__in">
+                <h1 class="in__celsus"></h1>
+                <h1 class="in__kalvin"></h1>
+            </div>
+        </div>
+        <div class="forecast"></div>
+        <canvas id="myChart"></canvas>
+    </div>
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
