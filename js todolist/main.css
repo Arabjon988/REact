@@ -1,0 +1,43 @@
+.search{
+    position: relative;
+    display: none;
+    background-color: red;
+    width: 50vh;
+    height: 30px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+
+.searchOpen{
+    position: relative;
+    display: flex;
+    background-color: red;
+    width: 50vh;
+    height: 30px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.searchbar{
+    display: flex;
+}
+
+.inputBar{
+    display: none;
+}
+
+.close{
+    display: none;
+}
+
+.closeBar{
+    display: flex;
+}
+.input{
+    display: flex;
+}
