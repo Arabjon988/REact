@@ -2,6 +2,7 @@ const search = document.querySelector(".search")
 const searchBtn = document.querySelector(".btn")
 const inp = document.querySelector(".inputBar")
 const close = document.querySelector(".close")
+const closeBtn = document.querySelector(".close-btn")
 
 
 searchBtn.addEventListener("click", () =>
@@ -9,10 +10,13 @@ searchBtn.addEventListener("click", () =>
   search.classList.add("searchOpen")
   inp.classList.add("input")
   close.classList.add("closeBar")
-
-
 })
 
+closeBtn.addEventListener("click", () => {
+  search.classList.remove("searchOpen")
+  inp.classList.remove("input")
+  close.classList.remove("closeBar")
+})
 
 
 
