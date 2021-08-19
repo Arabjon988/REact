@@ -27,17 +27,11 @@
     display: flex;
 }
 
-.inputBar{
-    display: none;
-}
 
 .close{
     display: none;
 }
 
 .closeBar{
-    display: flex;
-}
-.input{
     display: flex;
 }

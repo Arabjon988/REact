@@ -1,29 +1,53 @@
-const search = document.querySelector(".search")
-const searchBtn = document.querySelector(".btn")
-const inp = document.querySelector(".inp")
-const closed = document.querySelector(".close")
+// const search = document.querySelector(".search")
+// const searchBtn = document.querySelector(".btn")
+// const closed = document.querySelector(".close")
 
 
-searchBtn.addEventListener("click", () =>
-{
-  search.classList.add("searchOpen")
-  inp.classList.add("input")
-  closed.classList.add("closeBar")
-})
+// searchBtn.addEventListener("click", () =>
+// {
+//   search.classList.add("searchOpen")
+//   closed.classList.add("closeBar")
+// })
 
-closed.addEventListener("click", () => {
-  search.classList.remove("searchOpen")
-  inp.classList.remove("input")
-  closed.classList.remove("closeBar")
-})
+// closed.addEventListener("click", () => {
+//   search.classList.remove("searchOpen")
+//   closed.classList.remove("closeBar")
+// })
 
 
 
 
 
+const arr = [
+  {
+    id: 1, name: "Gaffor", hobby: "football"
+  },
+  {
+    id: 2, name: "Gaffor", hobby: "football"
+  },
+  {
+    id: 3, name: "Gaffor", hobby: "football"
+  },
+  {
+    id: 4, name: "Gaffor", hobby: "football"
+  },
+  {
+    id: 5, name: "Gaffor", hobby: "football"
+  },
+  {
+    id: 6, name: "Gaffor", hobby: "football"
+  },
+  {
+    id: 7, name: "Gaffor", hobby: "football"
+  }
+]
 
 
-
+const getFilter = (key) =>{
+  const newArr = arr.filter((val) => {
+    console.log(val.name !== "Vali")
+  })
+}
 
 
 
